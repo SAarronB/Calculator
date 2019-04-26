@@ -3,6 +3,8 @@
 int operation(string);
 int Calculator::inputSystem() {
 	string userResponse;
+    int numberOne;
+    int numberTwo;
 	cout << "Add(add) | Subtract(sub) | multiply(multi) | divide(div) \n";
 	cout << "What operation would you like to make?\n";
 	cin >> userResponse;
@@ -21,18 +23,19 @@ int Calculator::inputSystem() {
 	else if (userResponse == "exit") {
 		return 0;
 	}
+    
+    cout << "what is your first digit" << endl;
+    cin >> numberOne;
+    cout << "what is your second digit" << endl;
+    cin >> numberTwo;
 	else {
 		inputSystem();
 	}
+    cin << endl;
 }
 
 void Calculator::operation(string userResponse) {
-	int numberOne;
-	int numberTwo;
-	cout << "what is your first digit" << endl;
-	cin >> numberOne;
-	cout << "what is your second digit" << endl;
-	cin >> numberTwo;
+
 	if (userResponse == "add") {
 	    cout << "Your Two Numbers Added are: " << numberOne + numberTwo << endl;
 		inputSystem();
