@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "Calculator.hpp"
 
 int operation(string);
