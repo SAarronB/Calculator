@@ -343,3 +343,5 @@ ASALocalRun/
 healthchecksdb
 
 .xml
+.DS_Store
+.vcxproject
