@@ -1,12 +1,14 @@
-#include "pch.h"
+//All Original Code
 #include "Calculator.hpp"
 
 int operation(string);
 int Calculator::inputSystem() {
+	//startAbstraction
 	string userResponse;
 	cout << "Add(add) | Subtract(sub) | multiply(multi) | divide(div) \n";
 	cout << "What operation would you like to make?\n";
 	cin >> userResponse;
+	//endAbstraction
 	if (userResponse == "add") {
 		operation(userResponse);
 	}
@@ -27,6 +29,7 @@ int Calculator::inputSystem() {
 	}
 }
 
+//startAlgorithm
 void Calculator::operation(string userResponse) {
 	int numberOne;
 	int numberTwo;
@@ -54,6 +57,7 @@ void Calculator::operation(string userResponse) {
 		inputSystem();
 	}
 }
+//endAlgorithm
 
 
 void Calculator::start(){
