@@ -23,14 +23,14 @@ int Calculator::inputSystem() {
 	else if (userResponse == "exit") {
 		return 0;
 	}
+	else {
+		inputSystem();
+	}
     
     cout << "what is your first digit" << endl;
     cin >> numberOne;
     cout << "what is your second digit" << endl;
     cin >> numberTwo;
-	else {
-		inputSystem();
-	}
     cin << endl;
 }
 
